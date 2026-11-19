@@ -1,0 +1,6 @@
+{
+  "name": "+150 Desenhos Natalinos para Colorir | Kit Natalino Infantil",
+  "description": "Um kit digital com +150 desenhos natalinos para colorir, imprimir e aproveitar em família, com temas de Papai Noel, árvores, renas, bonecos de neve e bônus especiais de Natal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
