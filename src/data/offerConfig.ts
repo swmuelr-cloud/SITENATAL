@@ -11,6 +11,8 @@ export interface ColoringSample {
   title: string;
   theme: string;
   pagesLabel: string;
+  imageUrl: string;
+  alt: string;
 }
 
 export interface BonusItem {
@@ -78,44 +80,56 @@ export const COLORING_SAMPLES: ColoringSample[] = [
   {
     id: 'page1',
     number: '01',
-    title: 'Papai Noel com Presentes',
+    title: 'Ursinhos na Oficina de Natal',
     theme: 'Traços largos · Ideal para crianças',
     pagesLabel: 'Coleção Clássica · A4 PDF',
+    imageUrl: '/assets/aistudio/6_9fd6f2a7.png',
+    alt: 'Desenho para colorir: ursinhos natalinos embrulhando presentes, costurando e desenhando perto da árvore de Natal',
   },
   {
     id: 'page2',
     number: '02',
-    title: 'Árvore de Natal Decorada',
-    theme: 'Bolinhas, estrela e caixas de presente',
+    title: 'Ursinhos & Pinguim Musicais',
+    theme: 'Detalhes suaves para lápis ou giz',
     pagesLabel: 'Coleção Clássica · A4 PDF',
+    imageUrl: '/assets/aistudio/99_45d55ab4.png',
+    alt: 'Desenho para colorir: dois ursinhos com gorro ouvindo música e tocando violino na neve com um pinguim lendo',
   },
   {
     id: 'page3',
     number: '03',
-    title: 'Rena Feliz & Guirlanda',
-    theme: 'Detalhes suaves para lápis ou giz',
-    pagesLabel: 'Personagens · A4 PDF',
+    title: 'Ursinhos na Fogueira de Inverno',
+    theme: 'Cenário aconchegante na floresta nevada',
+    pagesLabel: 'Inverno Mágico · A4 PDF',
+    imageUrl: '/assets/aistudio/8_c0d2e0f5.png',
+    alt: 'Desenho para colorir: dois ursinhos sentados em um tronco na fogueira sob a lua cheia',
   },
   {
     id: 'page4',
     number: '04',
-    title: 'Boneco de Neve Aconchegante',
-    theme: 'Cachecol, gorro e flocos de neve',
-    pagesLabel: 'Inverno Mágico · A4 PDF',
+    title: 'Sala Natalina com Lareira',
+    theme: 'Árvore decorada, meias, guirlanda e presentes',
+    pagesLabel: 'Cenários · A4 PDF',
+    imageUrl: '/assets/aistudio/2_00ee02ad.png',
+    alt: 'Desenho para colorir: sala acolhedora de Natal com lareira, meias, poltrona, guirlanda, árvore decorada e presentes',
   },
   {
     id: 'page5',
     number: '05',
-    title: 'Casinha de Biscoito Natalina',
-    theme: 'Cenário doce com bengalas e doces',
-    pagesLabel: 'Cenários · A4 PDF',
+    title: 'Ursinho Lendo na Noite de Natal',
+    theme: 'Clima aconchegante para pintar em família',
+    pagesLabel: 'Personagens · A4 PDF',
+    imageUrl: '/assets/aistudio/7_175f8d8e.png',
+    alt: 'Desenho para colorir: ursinho de gorro lendo livro de Natal na cama com caneca quente e vista para casas nevadas',
   },
   {
     id: 'page6',
     number: '06',
-    title: 'Meia de Natal & Sinos',
-    theme: 'Símbolos tradicionais para recortar e pintar',
-    pagesLabel: 'Enfeites · A4 PDF',
+    title: 'Papai Noel no Trenó com Renas',
+    theme: 'Noite mágica de Natal sobre as casinhas',
+    pagesLabel: 'Coleção Clássica · A4 PDF',
+    imageUrl: '/assets/aistudio/3_9d9695df.png',
+    alt: 'Desenho para colorir: Papai Noel acenando no trenó puxado por renas voando sobre casas cobertas de neve',
   },
 ];
 

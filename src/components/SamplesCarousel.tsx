@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { COLORING_SAMPLES, ColoringSample, PREMIUM_CHECKOUT_URL } from '../data/offerConfig';
-import { ColoringPagePreview } from './Illustrations';
 
 interface SamplesCarouselProps {
   onZoomSample: (sample: ColoringSample) => void;
@@ -109,11 +108,12 @@ export const SamplesCarousel: React.FC<SamplesCarouselProps> = ({ onZoomSample }
                 aria-label={isClone ? undefined : `Ampliar página ${sample.number}: ${sample.title}`}
                 className="flex-shrink-0 w-[76vw] max-w-[300px] sm:w-[290px] bg-white rounded-xl p-2.5 shadow-[0_12px_30px_rgba(6,28,23,0.28)] cursor-pointer transition-transform duration-200 hover:-translate-y-1 text-left"
               >
-                <ColoringPagePreview
-                  id={sample.id}
-                  title={sample.title}
-                  number={sample.number}
-                  theme={sample.theme}
+                <img
+                  src={sample.imageUrl}
+                  alt={sample.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-lg object-contain"
                 />
               </button>
             );

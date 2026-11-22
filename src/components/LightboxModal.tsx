@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { ColoringSample, IllustrativeConversation } from '../data/offerConfig';
-import { ColoringPagePreview } from './Illustrations';
 
 export type LightboxTarget =
   | { type: 'sample'; item: ColoringSample }
@@ -62,14 +61,11 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ target, onClose })
 
         {target.type === 'sample' ? (
           <div className="pt-4">
-            <div className="max-w-[380px] mx-auto shadow-md rounded-lg">
-              <ColoringPagePreview
-                id={target.item.id}
-                title={target.item.title}
-                number={target.item.number}
-                theme={target.item.theme}
-              />
-            </div>
+            <img
+              src={target.item.imageUrl}
+              alt={target.item.alt}
+              className="max-h-[75dvh] w-auto mx-auto rounded-xl shadow-md object-contain bg-white"
+            />
             <p className="mt-4 text-center text-xs text-[#4f5d4d]">
               {target.item.pagesLabel} · Exemplo demonstrativo do material
             </p>
